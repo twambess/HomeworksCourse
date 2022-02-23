@@ -30,6 +30,6 @@ public class main {
         for(int i=0;i<array1.length;i++){
             System.out.println(array1[i]);
         }
-        showArray(new String[][]{{"hui","cheln"},{"pizdec"},{"havno"}});
+        showArray(new String[][]{{"somestring1","somestring2"},{"somestring3"},{"smestring4"}});
     }
 }
