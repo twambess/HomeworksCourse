@@ -14,7 +14,7 @@ public class TestEmployee {
 
     public static void main(String[] args) {
         ArrayList<Employee> list=new ArrayList<>();
-        list.add(new Employee("Vasya","IT",200));
+        list.add(new Employee("Va   sya","IT",200));
         list.add(new Employee("Evan","IT",450));
         list.add(new Employee("Masha","IT",500));
         list.add(new Employee("Evpatiy","MN",200));
@@ -23,11 +23,11 @@ public class TestEmployee {
 
    //     System.out.println(list.get(1).department==list.get(2).department);
         TestEmployee t=new TestEmployee();
-        t.filtraciyaRabotnikov(list, emp-> (emp.department=="IT" && emp.salary>200));
-        System.out.println("------------------------------------");
-        t.filtraciyaRabotnikov(list,emp-> (emp.name.startsWith("E")&& emp.salary!=450));
-        System.out.println("------------------------------------");
-        t.filtraciyaRabotnikov(list,emp->emp.name==emp.department);
+        t.filtraciyaRabotnikov(list, emp-> (emp.department=="IT" && emp.salary>200));  ////L
+        System.out.println("------------------------------------");                     ////Y
+        t.filtraciyaRabotnikov(list,emp-> (emp.name.startsWith("E")&& emp.salary!=450));////A
+        System.out.println("------------------------------------");                     ////M
+        t.filtraciyaRabotnikov(list,emp->emp.name==emp.department);                     ////BDA
     }
 }
 
